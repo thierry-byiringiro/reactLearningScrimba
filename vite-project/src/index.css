@@ -26,7 +26,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
   font-family:  "Inter", sans-serif;
@@ -124,5 +124,48 @@ main{
   background-position-y: 22%;
   background-size: 22%;
   height: 100%;
+
+}
+
+.fulaha{
+  width: 550px;
+  height: 704px;
+}
+
+.matter{
+  display: flex;
+  background-color: #F55A5A;
+  width: 550px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: white;
+}
+
+.matter > img{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+
+.matter > p{
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+
+.light{
+  display: flex;
+}
+
+.light > .save{
+  display: flex;
+  flex-direction: column;
+}
+
+.light > .save > .top{
+  display: flex;
 
 }
