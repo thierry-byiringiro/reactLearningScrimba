@@ -16,7 +16,7 @@
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  /* text-decoration: inherit; */
 }
 
 a:hover {
@@ -32,10 +32,7 @@ body {
   font-family:  "Inter", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 
 button {
   border-radius: 8px;
@@ -128,7 +125,7 @@ main{
 }
 
 .fulaha{
-  width: 550px;
+  width: 650px;
   height: 704px;
 }
 
@@ -158,14 +155,28 @@ main{
 
 .light{
   display: flex;
+  margin: 10px 0px;
+  width: 550px;
+  height: 100px;
+  border: 1px dashed;
+}
+.light > * + * {
+  margin-left: 10px;
 }
 
 .light > .save{
   display: flex;
   flex-direction: column;
+  align-items:flex-start;
+  line-height: 1;
+  text-align: left;
 }
+/* .save > * {
+  border: 1px solid;
+} */
+
 
 .light > .save > .top{
   display: flex;
-
+  gap: 10px;
 }
