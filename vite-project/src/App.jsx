@@ -5,6 +5,7 @@ import './App.css'
 import Header from './TravellingJournal/Header'
 import Entry from './TravellingJournal/Entry'
 import MyButton from './reactLearn/MyApp'
+import Profile from './reactLearn/Profile'
 function App() {
   return (
     <>
@@ -19,8 +20,12 @@ function App() {
         <Header />
         <Entry />
       </div> */}
-      <MyButton/>
-          
+      <>
+        <MyButton />
+        <Profile />
+
+      </>
+
 
     </>
   )
