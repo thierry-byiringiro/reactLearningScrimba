@@ -4,6 +4,7 @@ import './App.css'
 // import Header from './ReactFacts_Projects/Header'
 import Header from './TravellingJournal/Header'
 import Entry from './TravellingJournal/Entry'
+import MyButton from './reactLearn/MyApp'
 function App() {
   return (
     <>
@@ -14,10 +15,13 @@ function App() {
 
 
 
-      <div className='fulah'>
+      {/* <div className='fulah'>
         <Header />
         <Entry />
-      </div>
+      </div> */}
+      <MyButton/>
+          
+
     </>
   )
 }
