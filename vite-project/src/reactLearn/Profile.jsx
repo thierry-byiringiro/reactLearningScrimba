@@ -12,7 +12,7 @@ const Profile = () => {
     ];
 
     let getFavorites = favorites.map((element,index) => (
-        <li key ={index}>{element.title} {`-->`} {element.type}</li>
+        <li key ={index} style={{color : element.title.startsWith("F") ? "blue" : "red"}}>{element.title} {`-->`} {element.type}</li>
     ))
     let isMale = true;
     return (
