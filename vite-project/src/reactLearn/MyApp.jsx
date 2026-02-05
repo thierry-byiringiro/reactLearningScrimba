@@ -6,15 +6,29 @@ function MyApp() {
     const add = () => {
         setCount(count + 1);
     }
-    const mult = () => {
-        setCount(count - 1);
+    const sub = (e) => {
+        if (e == 0) {
+            e = String(e);
+            setCount(e = 'can not go beyond zero');
+        } else {
+            setCount(e - 1)
+        }
     }
 
     const reset = () => {
         setCount(0)
     }
     function MyButton() {
-        return <><button type="button" onClick={add}>Awake me 😴😴</button></>
+        return (
+            <>
+                <div className="myBut">
+
+                    <button type="button" onClick={add}>Awake me 😴😴</button>
+                    <button type="button" onClick={reset}>Make me sleep</button>
+                    <button type="button" onClick={sub}>Make me more Lazy</button>
+                </div>
+            </>
+        )
     }
     return (
         <>
