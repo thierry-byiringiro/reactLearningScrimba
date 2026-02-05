@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 function MyApp() {
-    let [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
+    const [error,setError] = useState();
 
     const add = () => {
         setCount(count + 1);
     }
     const sub = (e) => {
         if (e == 0) {
-            e = String(e);
-            setCount(e = 'can not go beyond zero');
+            setError('can not go beyond zero');
         } else {
             setCount(e - 1)
         }
