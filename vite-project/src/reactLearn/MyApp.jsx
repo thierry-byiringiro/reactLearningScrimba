@@ -3,11 +3,18 @@ import { useState } from "react";
 function MyApp() {
     let [count, setCount] = useState(0);
 
-    const handleClick = () => {
+    const add = () => {
         setCount(count + 1);
     }
+    const mult = () => {
+        setCount(count - 1);
+    }
+
+    const reset = () => {
+        setCount(0)
+    }
     function MyButton() {
-        return <><button type="button" onClick={handleClick}>Awake me 😴😴</button></>
+        return <><button type="button" onClick={add}>Awake me 😴😴</button></>
     }
     return (
         <>
