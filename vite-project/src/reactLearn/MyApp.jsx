@@ -2,21 +2,16 @@ import { useState } from "react";
 
 function MyApp() {
     const [count, setCount] = useState(0);
-    const [error,setError] = useState();
 
     const add = () => {
         setCount(count + 1);
     }
     const sub = (e) => {
-        if (e == 0) {
-            setError('can not go beyond zero');
-        } else {
-            setCount(e - 1)
-        }
+            setCount(count - 1);
     }
 
     const reset = () => {
-        setCount(0)
+        setCount(0);
     }
     function MyButton() {
         return (
@@ -31,7 +26,7 @@ function MyApp() {
         )
     }
     return (
-        <>
+        <>n
             <h1>Welcome to my app my pipo</h1>
             <MyButton />
             <h2>
