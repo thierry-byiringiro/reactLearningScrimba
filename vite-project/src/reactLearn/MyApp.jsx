@@ -3,30 +3,21 @@ import { useState } from "react";
 function MyApp() {
     const [count, setCount] = useState(0);
 
-    const add = () => {
+    const increment = () => {
         setCount(count + 1);
-    }
-    const sub = (e) => {
-            setCount(count - 1);
-    }
-
-    const reset = () => {
-        setCount(0);
     }
     function MyButton() {
         return (
             <>
                 <div className="myBut">
-
-                    <button type="button" onClick={add}>Awake me 😴😴</button>
-                    <button type="button" onClick={reset}>Make me sleep</button>
-                    <button type="button" onClick={sub}>Make me more Lazy</button>
+                    <button type="button" onClick={increment}>Button 1</button>
+                    <button type="button" onClick={increment}>Button 2</button>
                 </div>
             </>
         )
     }
     return (
-        <>n
+        <>
             <h1>Welcome to my app my pipo</h1>
             <MyButton />
             <h2>
