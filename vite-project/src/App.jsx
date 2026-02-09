@@ -8,6 +8,7 @@ import MyButton from './reactLearn/MyApp'
 import Profile from './reactLearn/Profile'
 import MyProfile from './reactLearn/MyProfile'
 import PropsTry from './reactLearn/PropsTry'
+import Gallery from './reactLearn/Gallery'
 function App() {
   return (
     <>
@@ -25,8 +26,9 @@ function App() {
       <>
         {/* <MyButton /> */}
         {/* <Profile /> */}
-        <MyProfile/>
-        <PropsTry name="Aime"/>
+        {/* <MyProfile/>
+        <PropsTry name="Aime"/> */}
+        <Gallery/>
       </>
 
 
