@@ -6,6 +6,7 @@ import Header from './TravellingJournal/Header'
 import Entry from './TravellingJournal/Entry'
 import MyButton from './reactLearn/MyApp'
 import Profile from './reactLearn/Profile'
+import MyProfile from './reactLearn/MyProfile'
 function App() {
   return (
     <>
@@ -21,9 +22,9 @@ function App() {
         <Entry />
       </div> */}
       <>
-        <MyButton />
-        <Profile />
-
+        {/* <MyButton /> */}
+        {/* <Profile /> */}
+        <MyProfile/>
       </>
 
 
